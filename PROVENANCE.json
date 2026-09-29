@@ -1,0 +1,42 @@
+{
+  "package": "obix-component-textarea",
+  "dir": "core/obix-component-textarea",
+  "importedBy": "scripts/recovery/generate-shims.mjs",
+  "stage": "stage-7 compat shim (authored-in-recovery; no upstream code)",
+  "replaces": {
+    "name": "@obinexusltd/obix-component-textarea",
+    "source": "npm:@obinexusltd/obix-component-textarea@0.1.0",
+    "integrity": "sha512-tXHguAzy12D7BLLo2VsNGUg8iEbLmAODzv1RtwxdYvwtn3aLPa+KwATIjPIxnGwvluB4ZRTunK6VMQXvppBEqQ=="
+  },
+  "owner": "obix-core-component",
+  "surface": "docs/recovery/shim-surface.json",
+  "decision": "compat-shim (docs/recovery/migration-table.md; obix-naming.json legacyShims, kind published)",
+  "entries": {
+    ".": {
+      "values": 2,
+      "types": 4,
+      "removed": [],
+      "missingTypes": [
+        "Action",
+        "DOPComponent"
+      ]
+    }
+  },
+  "localFixes": [],
+  "renamedFrom": [
+    {
+      "name": "@obinexusltd/obix-component-textarea",
+      "dir": "core/obix-component-textarea",
+      "stage": "unscoped-naming",
+      "why": "D-102 (2026-09-29): OBIX packages are named without an npm scope — previous name @obinexusltd/obix-component-textarea, current name obix-component-textarea (docs/recovery/unscoped-migration.md); the directory, version and exports are unchanged"
+    }
+  ],
+  "export": {
+    "from": "https://github.com/obinexusmk2/obix-monorepo",
+    "branch": "recovery/obix-api-preserving-rebuild",
+    "commit": "69cafc94910c1add865a520877617ac307668875",
+    "directory": "core/obix-component-textarea",
+    "exportedBy": "scripts/release/export-repos.mjs",
+    "note": "a clean initial commit of this package; the monorepo history is not imported (D-103). Local machine paths in this record are replaced by <local workspace>."
+  }
+}
